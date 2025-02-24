@@ -1,0 +1,126 @@
+public class Main {
+    public static void main(String[] args) {
+        // 1. Verifica se o número é par ou ímpar.
+        int num1 = 10;
+        System.out.println((num1 % 2 == 0) ? "Par" : "Ímpar");
+
+        // 2. Verifica se a pessoa é maior ou menor de idade.
+        int idade = 17;
+        System.out.println((idade >= 18) ? "Maior de idade" : "Menor de idade");
+
+        // 3. Verifica se o número é positivo, negativo ou zero.
+        int num2 = -5;
+        System.out.println((num2 > 0) ? "Positivo" : (num2 < 0) ? "Negativo" : "Zero");
+
+        // 4. Verifica se o número é múltiplo de 5.
+        int num3 = 25;
+        System.out.println((num3 % 5 == 0) ? "Múltiplo de 5" : "Não é múltiplo de 5");
+
+        // 5. Verifica se o ano é bissexto.
+        int ano = 2020;
+        System.out.println((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0) ? "Bissexto" : "Não é bissexto");
+
+        // 6. Verifica se a pessoa pode dirigir.
+        int idade2 = 20;
+        boolean temCarteira = true;
+        System.out.println((idade2 >= 18 && temCarteira) ? "Pode dirigir" : "Não pode dirigir");
+
+        // 7. Verifica se o número é positivo e par.
+        int num4 = 6;
+        System.out.println((num4 > 0 && num4 % 2 == 0) ? "Sim" : "Não");
+
+        // 8. Verifica se a nota é suficiente para aprovação.
+        double nota = 8.5;
+        System.out.println((nota >= 7) ? "Aprovado" : "Reprovado");
+
+        // 9. Compara dois números e retorna o maior.
+        int num5 = 15, num6 = 20;
+        System.out.println((num5 > num6) ? num5 : num6);
+
+        // 10. Verifica se o número é maior que 100.
+        int num7 = 120;
+        System.out.println((num7 > 100) ? "Alto" : "Baixo");
+
+        // 11. Verifica se o caractere é uma vogal.
+        char letra = 'a';
+        System.out.println((letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') ? "Vogal" : "Consoante");
+
+        // 12. Verifica se o número é par ou ímpar e positivo ou negativo.
+        int num8 = -4;
+        System.out.println((num8 % 2 == 0) ? (num8 > 0 ? "Par e Positivo" : "Par e Negativo") : (num8 > 0 ? "Ímpar e Positivo" : "Ímpar e Negativo"));
+
+        // 13. Compara dois números e retorna o maior.
+        int num9 = 10, num10 = 15;
+        System.out.println((num9 > num10) ? num9 : num10);
+
+        // 14. Verifica se o número está entre 10 e 50.
+        int num11 = 30;
+        System.out.println((num11 >= 10 && num11 <= 50) ? "Dentro do intervalo" : "Fora do intervalo");
+
+        // 15. Verifica se o número é múltiplo de 3 e 5 (FizzBuzz).
+        int num12 = 15;
+        System.out.println((num12 % 3 == 0 && num12 % 5 == 0) ? "FizzBuzz" : num12);
+
+        // 16. Converte um valor booleano para "Sim" ou "Não".
+        boolean flag = true;
+        System.out.println(flag ? "Sim" : "Não");
+
+        // 17. Verifica se a pessoa tem direito ao desconto.
+        int idade3 = 70;
+        boolean estudante = false;
+        System.out.println((idade3 > 60 || estudante) ? "Qualificado para desconto" : "Não qualificado para desconto");
+
+        // 18. Verifica o tipo do triângulo.
+        int lado1 = 3, lado2 = 3, lado3 = 3;
+        System.out.println((lado1 == lado2 && lado2 == lado3) ? "Equilátero" : (lado1 == lado2 || lado2 == lado3 || lado1 == lado3) ? "Isósceles" : "Escaleno");
+
+        // 19. Verifica se o número é divisível por 2 ou 3.
+        int num13 = 6;
+        System.out.println((num13 % 2 == 0 || num13 % 3 == 0) ? "Divisível" : "Não divisível");
+
+        // 20. Verifica a situação do aluno.
+        double nota2 = 5.5;
+        System.out.println((nota2 >= 7) ? "Aprovado" : (nota2 >= 5 && nota2 < 7) ? "Recuperação" : "Reprovado");
+
+        // 21. Verifica se o número é par/ímpar e positivo/negativo.
+        int num14 = -6;
+        System.out.println((num14 % 2 == 0) ? (num14 > 0 ? "Par e Positivo" : "Par e Negativo") : (num14 > 0 ? "Ímpar e Positivo" : "Ímpar e Negativo"));
+
+        // 22. Verifica se o produto tem frete grátis.
+        double precoProduto = 120;
+        System.out.println((precoProduto >= 100) ? "Frete grátis" : "Frete não grátis");
+
+        // 23. Verifica se a senha é válida (pelo menos 8 caracteres).
+        String senha = "12345678";
+        System.out.println((senha.length() >= 8) ? "Senha válida" : "Senha inválida");
+
+        // 24. Verifica se o número é perfeito.
+        int num15 = 28;
+        int somaDivisores = 1 + 2 + 4 + 7 + 14; // Divisores de 28 (exceto ele mesmo)
+        System.out.println((somaDivisores == num15) ? "Perfeito" : "Não perfeito");
+
+        // 25. Verifica se o dia é útil ou final de semana.
+        String dia = "sábado";
+        System.out.println((dia.equals("sábado") || dia.equals("domingo")) ? "Final de semana" : "Dia útil");
+
+        // 26. Verifica se a pessoa pode votar.
+        int idade4 = 17;
+        System.out.println((idade4 >= 16) ? "Pode votar" : "Não pode votar");
+
+        // 27. Verifica se o número é positivo ou zero, ou negativo.
+        int num16 = -5;
+        System.out.println((num16 >= 0) ? "Positivo ou Zero" : "Negativo");
+
+        // 28. Verifica se o número está entre 20 e 30.
+        int num17 = 25;
+        System.out.println((num17 >= 20 && num17 <= 30) ? "Dentro do intervalo" : "Fora do intervalo");
+
+        // 29. Verifica a faixa etária da pessoa.
+        int idade5 = 45;
+        System.out.println((idade5 >= 18 && idade5 <= 60) ? "Adulto" : (idade5 > 60) ? "Idoso" : "Jovem");
+
+        // 30. Verifica se o aluno foi aprovado ou reprovado.
+        double nota3 = 6.5;
+        System.out.println((nota3 >= 6) ? "Aprovado" : "Reprovado");
+    }
+}
